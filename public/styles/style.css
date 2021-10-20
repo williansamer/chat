@@ -1,0 +1,52 @@
+#container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#messages{
+    margin: 20px;
+    width: 90vw;
+    height: 500px;
+    background-color: bisque;
+    border: solid 2px rgb(163, 152, 152);
+}
+
+input{
+    margin: 0 20px 0 20px;
+    padding: 5px;
+    font-size: 1.2em;
+    width: 77.5vw;
+    background-color: aliceblue;
+    outline: 0;
+}
+
+button{
+    margin: 0 20px 0 0;
+    padding: 5px;
+    font-size: 1.2em;
+    width: 10vw;
+    background-color: rgb(85, 85, 85);
+    color: aliceblue;
+}
+
+@media screen and (max-width: 640px) {
+
+    form{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    input{
+        margin: 0 5px 5px 5px;
+        width: 315px;
+    }
+
+    button{
+        margin: 0 0 0 0;
+        width: 85px;
+    }
+}
