@@ -9,8 +9,8 @@
     margin: 20px;
     width: 90vw;
     height: 500px;
-    background-color: bisque;
-    border: solid 2px rgb(163, 152, 152);
+    background-color: rgba(0,0,0,0.45);
+    border: solid 2px black;
 }
 
 input{
@@ -20,6 +20,7 @@ input{
     width: 77.5vw;
     background-color: aliceblue;
     outline: 0;
+    border-color: rgba(0,0,0,0.45);
 }
 
 button{
@@ -27,8 +28,20 @@ button{
     padding: 5px;
     font-size: 1.2em;
     width: 10vw;
-    background-color: rgb(85, 85, 85);
-    color: aliceblue;
+    background-color: rgb(255, 238, 0);
+    color: black;
+}
+
+ul{
+    list-style-image: url("../assets/foguete.png");
+}
+
+li{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.3em;
+    font-weight: bold;
+    color: rgb(31, 31, 31);
+    text-shadow: 1px 1px 0 rgb(202, 201, 201);
 }
 
 @media screen and (max-width: 640px) {
