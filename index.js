@@ -6,6 +6,13 @@ const socketIO = require("socket.io");
 app.use("/lazer", express.static(path.join(__dirname, "public")));
 app.use("/trabalho", express.static(path.join(__dirname, "public")));
 
+app.set("views", path.join(__dirname, "public"));
+app.set("view engine", "ejs");
+
+app.get("/", (req, res)=>{
+    res.render("redirect");
+})
+
 const server = app.listen(3000, ()=>{
     console.log("Server running..");
 })
