@@ -1,6 +1,6 @@
 const room  = window.location.pathname.replace(/\//g, ''); // O  'replace(/\//g, '')' irá substituir TUDO que for /(barra) por 'vazio'. A leitura do regex é: O Barra(/) irá mostrar o começo e o final de uma string. O '\/' irá informar a string que deseja(no caso, usou a barra contrária para dar certo, senão ficaria como comentário), é por fim o 'g' para usar de forma global
 //console.log(room);
-const socket = io(`http://localhost:3000/${room}`); //conectando com o BACK(com as respectivas salas)
+const socket = io(`https://chat-willian.herokuapp.com/${room}`); //conectando com o BACK(com as respectivas salas)
 
 socket.on("messages", (messages)=>{ //Recebendo do BACK, o array de mensagens(messages)
     insertMessagesOnMural(messages); //enviando como arg o 'messages'
