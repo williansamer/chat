@@ -19,7 +19,7 @@ io.on("connection", (socket)=>{ //
     socket.emit("messages", messages); //enviado para TODOS os FRONTs ao entrar no chat
 
     socket.on("new-message", (data)=>{
-        messages.push(data.msg); //mandando a nova mensagem para o array de mensagens(messages)
+        messages.push(data); //mandando a nova mensagem para o array de mensagens(messages)
         io.emit("messages", messages) //enviando para TODOS OS FRONTs, o array de mensagens
     })
 })

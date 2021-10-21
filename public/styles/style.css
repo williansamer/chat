@@ -7,13 +7,27 @@
 
 #messages{
     margin: 20px;
+    margin-bottom: 10px;
     width: 90vw;
     height: 500px;
     background-color: rgba(0,0,0,0.45);
     border: solid 2px black;
 }
 
-input{
+form{
+    margin-bottom: 5px;
+}
+
+#iu{
+    margin: 0 20px 0 20px;
+    padding: 5px;
+    font-size: 1.2em;
+    background-color: aliceblue;
+    outline: 0;
+    border-color: rgba(0,0,0,0.45);
+}
+
+#im{
     margin: 0 20px 0 20px;
     padding: 5px;
     font-size: 1.2em;
@@ -53,7 +67,12 @@ li{
         align-items: center;
     }
 
-    input{
+    #iu{
+        margin: 0 5px 5px 5px;
+        width: 315px;
+    }
+
+    #im{
         margin: 0 5px 5px 5px;
         width: 315px;
     }
