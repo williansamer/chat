@@ -1,3 +1,4 @@
+require("dotenv").config();
 const express = require("express");
 const app = express();
 const path = require("path");
@@ -13,7 +14,7 @@ app.get("/", (req, res)=>{
     res.render("redirect");
 })
 
-const server = app.listen(3000, ()=>{
+const server = app.listen(process.env.PORT || 3000, ()=>{
     console.log("Server running..");
 })
 
